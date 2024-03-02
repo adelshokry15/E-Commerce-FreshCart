@@ -32,7 +32,7 @@ function App() {
       element: <LayOut />,
       children: [
         {
-          index: true,
+          path: "/home",
           element: (
             <ProtectedRouts>
               <Home />
@@ -40,7 +40,7 @@ function App() {
           ),
         },
         {
-          path: "products",
+          path: "/products",
           element: (
             <ProtectedRouts>
               <Products />
