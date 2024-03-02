@@ -1,0 +1,7 @@
+.catLayer {
+  top: 100%;
+  transition: top 0.3s;
+}
+.catContainer:hover .catLayer {
+  top: 0;
+}

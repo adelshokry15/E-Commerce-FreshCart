@@ -1,0 +1,17 @@
+.aside {
+  height: 600px;
+}
+.aside li {
+  width: fit-content;
+}
+.aside::-webkit-scrollbar {
+  width: 12px;
+}
+.aside::-webkit-scrollbar-track {
+  background-color: rgb(206, 219, 209);
+  border-radius: 100vw;
+}
+.aside::-webkit-scrollbar-thumb {
+  background-color: rgb(10, 173, 10);
+  border-radius: 100vw;
+}
