@@ -33,6 +33,7 @@ function App() {
       children: [
         {
           index: true,
+          path: "/",
           element: (
             <ProtectedRouts>
               <Home />
