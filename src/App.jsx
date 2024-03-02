@@ -28,12 +28,11 @@ import ProtectedAuth from "./Components/ProtectedAuth/ProtectedAuth";
 function App() {
   const routes = createBrowserRouter([
     {
-      path: "/",
+      path: "/E-Commerce-FreshCart/",
       element: <LayOut />,
       children: [
         {
           index: true,
-          path: "/",
           element: (
             <ProtectedRouts>
               <Home />
