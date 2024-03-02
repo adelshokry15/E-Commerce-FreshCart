@@ -1,6 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  RouterProvider,
+  createBrowserRouter,
+  createHashRouter,
+} from "react-router-dom";
 import LayOut from "./Components/LayOut/LayOut";
 import Home from "./Components/Home/Home";
 import Products from "./Components/Products/Products";
@@ -26,9 +30,9 @@ import Profile from "./Components/Profile/Profile";
 import ProtectedAuth from "./Components/ProtectedAuth/ProtectedAuth";
 
 function App() {
-  const routes = createBrowserRouter([
+  const routes = createHashRouter([
     {
-      path: "/E-Commerce-FreshCart/",
+      path: "/",
       element: <LayOut />,
       children: [
         {
