@@ -23,10 +23,7 @@ export default function Login() {
           localStorage.setItem("userToken", data.token);
           setToken(data.token);
           setUserData(data.user);
-          console.log(data?.user);
           localStorage.setItem("userProfile", JSON.stringify(data?.user));
-
-          console.log(localStorage.getItem("userProfile"));
           setIsLoading(false);
           setErrorMessage(null);
           navigate("/");
