@@ -121,6 +121,7 @@ function App() {
         },
 
         {
+          index: true,
           path: "login",
           element: (
             <ProtectedAuth>
