@@ -77,7 +77,7 @@ export default function NavBar() {
                       isActiveLink("/products") ? styles.active : ""
                     }`}
                     aria-current="page"
-                    to={"products"}
+                    to={"/products"}
                   >
                     Products
                   </Link>
@@ -88,7 +88,7 @@ export default function NavBar() {
                       isActiveLink("/categories") ? styles.active : ""
                     }`}
                     aria-current="page"
-                    to={"categories"}
+                    to={"/categories"}
                   >
                     Categories
                   </Link>
@@ -99,7 +99,7 @@ export default function NavBar() {
                       isActiveLink("/brands") ? styles.active : ""
                     }`}
                     aria-current="page"
-                    to={"brands"}
+                    to={"/brands"}
                   >
                     Brands
                   </Link>
@@ -110,7 +110,7 @@ export default function NavBar() {
                       isActiveLink("/wishlist") ? styles.active : ""
                     }`}
                     aria-current="page"
-                    to={"wishlist"}
+                    to={"/wishlist"}
                   >
                     Wishlist
                   </Link>
@@ -125,7 +125,7 @@ export default function NavBar() {
                       isActiveLink("/cart") ? styles.active : ""
                     }`}
                     aria-current="page"
-                    to={"cart"}
+                    to={"/cart"}
                   >
                     <i className="fa-solid fa-cart-shopping fs-2"></i>
                     <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-main">
@@ -149,7 +149,7 @@ export default function NavBar() {
                         isActiveLink("/profile") ? styles.active : ""
                       }`}
                       aria-current="page"
-                      to={"profile"}
+                      to={"/profile"}
                     >
                       <i className="fa-solid fa-user"></i>
                     </Link>
@@ -163,7 +163,7 @@ export default function NavBar() {
                         isActiveLink("/register") ? styles.active : ""
                       }`}
                       aria-current="page"
-                      to={"register"}
+                      to={"/register"}
                     >
                       Register
                     </Link>
@@ -174,7 +174,7 @@ export default function NavBar() {
                         isActiveLink("/login") ? styles.active : ""
                       }`}
                       aria-current="page"
-                      to={"login"}
+                      to={"/login"}
                     >
                       Login
                     </Link>

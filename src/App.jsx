@@ -32,7 +32,7 @@ function App() {
       element: <LayOut />,
       children: [
         {
-          path: "/home",
+          index: true,
           element: (
             <ProtectedRouts>
               <Home />
@@ -48,7 +48,7 @@ function App() {
           ),
         },
         {
-          path: "product-details/:id",
+          path: "/product-details/:id",
           element: (
             <ProtectedRouts>
               <ProductDetails />
@@ -56,7 +56,7 @@ function App() {
           ),
         },
         {
-          path: "categories",
+          path: "/categories",
           element: (
             <ProtectedRouts>
               <Categories />
@@ -64,7 +64,7 @@ function App() {
           ),
         },
         {
-          path: "category-details/:id",
+          path: "/category-details/:id",
           element: (
             <ProtectedRouts>
               <CategoryDetails />
@@ -72,7 +72,7 @@ function App() {
           ),
         },
         {
-          path: "brands",
+          path: "/brands",
           element: (
             <ProtectedRouts>
               <Brands />
@@ -80,7 +80,7 @@ function App() {
           ),
         },
         {
-          path: "wishlist",
+          path: "/wishlist",
           element: (
             <ProtectedRouts>
               <Wishlist />
@@ -88,7 +88,7 @@ function App() {
           ),
         },
         {
-          path: "checkout",
+          path: "/checkout",
           element: (
             <ProtectedRouts>
               <Checkout />
@@ -96,7 +96,7 @@ function App() {
           ),
         },
         {
-          path: "allorders",
+          path: "/allorders",
           element: (
             <ProtectedRouts>
               <Orders />
@@ -104,7 +104,7 @@ function App() {
           ),
         },
         {
-          path: "cart",
+          path: "/cart",
           element: (
             <ProtectedRouts>
               <Cart />
@@ -112,7 +112,7 @@ function App() {
           ),
         },
         {
-          path: "profile",
+          path: "/profile",
           element: (
             <ProtectedRouts>
               <Profile />
@@ -121,8 +121,7 @@ function App() {
         },
 
         {
-          index: true,
-          path: "login",
+          path: "/login",
           element: (
             <ProtectedAuth>
               <Login />
@@ -130,7 +129,7 @@ function App() {
           ),
         },
         {
-          path: "forgotPassword",
+          path: "/forgotPassword",
           element: (
             <ProtectedAuth>
               <ForgotPassword />
@@ -138,7 +137,7 @@ function App() {
           ),
         },
         {
-          path: "updatePassword",
+          path: "/updatePassword",
           element: (
             <ProtectedAuth>
               <UpdatePassword />
@@ -146,7 +145,7 @@ function App() {
           ),
         },
         {
-          path: "register",
+          path: "/register",
           element: (
             <ProtectedAuth>
               <Register />
