@@ -139,7 +139,7 @@ export default function Cart() {
                   <span className="mx-3">{e.count}</span>
                   <button
                     onClick={() => {
-                      if (e?.count - 1 > 1) {
+                      if (e?.count - 1 > 0) {
                         updateProduct(e?.product?.id, e.count - 1);
                       } else {
                         removeProduct(e?.product?.id);

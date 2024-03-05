@@ -44,6 +44,11 @@ export default function CartContextProvider({ children }) {
       return data;
     } catch (err) {
       console.log(err);
+      if (
+        err.response.data.message.indexOf("No cart exist for this user") !== -1
+      ) {
+        setItemsNum(0);
+      }
     }
   }
   async function removeFromCart(id) {

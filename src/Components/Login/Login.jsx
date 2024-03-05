@@ -7,12 +7,14 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { tokenContext } from "./../../Context/Token";
 import { Helmet } from "react-helmet";
+import { cartContext } from "../../Context/CartContext";
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   let { setToken, setUserData } = useContext(tokenContext);
+  let { getCart } = useContext(cartContext);
   let navigate = useNavigate();
   async function callLogin(reqBody) {
     setIsLoading(true);
@@ -27,6 +29,7 @@ export default function Login() {
           setIsLoading(false);
           setErrorMessage(null);
           navigate("/");
+          getCart();
           localStorage.setItem("userToken", data.token);
           setToken(data.token);
         }
