@@ -11,7 +11,6 @@ export default function Checkout() {
   const [payOnline, setPayOnline] = useState(false);
   let navigate = useNavigate();
   async function callCheckout(shippingAddress) {
-    console.log(shippingAddress);
     try {
       const { data } = await axios.post(
         payOnline
@@ -26,7 +25,6 @@ export default function Checkout() {
           },
         }
       );
-      console.log(data);
       setItemsNum(0);
       if (!payOnline) {
         setTimeout(() => {

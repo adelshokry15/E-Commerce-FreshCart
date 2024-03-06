@@ -15,6 +15,12 @@ export default function TokenContextProvider({ children }) {
       setToken(token);
     }
   }, []);
+  useEffect(() => {
+    if (token) {
+      const { id } = jwtDecode(localStorage.getItem("userToken"));
+      setUserId(id);
+    }
+  }, [localStorage.getItem("userToken")]);
   return (
     <tokenContext.Provider
       value={{ token, setToken, userId, setUserData, userData }}
